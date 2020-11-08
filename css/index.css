@@ -164,11 +164,20 @@ footer nav a {
 }
 
 .nav-list li a {
+    display: inline-block;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 4em;
-    margin-top: 5em;
+    padding: .8em 1em;
+    margin: 0 1em;
+    letter-spacing: .1em;
+}
+
+.nav-list li a:hover {
+    background-color: #1D3446;
+    color: #fff;
+    border-radius: .5em;
+    
 }
 
 .hero-img {
@@ -279,4 +288,19 @@ h2 {
     background-color: rgb(228, 228, 228);
 }
 
-/* done-zo */
+
+@media (max-width:830px) {
+    .img-logo {
+        margin-bottom: 2em;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-list li a {
+        margin: 0 1.5em;
+    }
+}
